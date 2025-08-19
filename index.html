@@ -1,78 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Tailwind Semantic Website</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tailwind Semantic Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="font-sans bg-gradient-to-br from-blue-50 to-purple-100 text-gray-900">
-</body>
 
-<!-- Hero Section -->
- <section class="bg-cover bg-center h-64 md:h-96 text-white flex items-center justify-center"
-        style="background-image: url('./rm118-ken-12.jpg');">
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-64 md:h-96 text-white flex items-center justify-center"
+    style="background-image: url('./rm118-ken-12.jpg');">
     <div class="bg-black bg-opacity-40 p-6 rounded">
-        <h1 class="text-3xl md:text-5xl font-bold text-center">Welcome to My Personal Website</h1>
-        <p class="text-center text-lg mt-2">Personal and Tailored by Me</p>
+      <h1 class="text-3xl md:text-5xl font-bold text-center">Welcome to My Personal Website</h1>
+      <p class="text-center text-lg mt-2">Personal and Tailored by Me</p>
     </div>
- </section>
+  </section>
 
-<!-- Header -->
-<header class="bg-purple-600 text-white p-4 shadow-md">
-    <nav class="container mx-auto flex justify-center items-center space-x-8 px-4">
-        <h1 class="text-xl font-bold">Erich Nicole's Information</h1>
-        <ul class="flex space-x-8 text-lg">
-            <li><a href="#" class="hover:text-yellow-300 transition duration-200 ease-in-out">Hobbies</a></li>
-            <li><a href="#" class="hover:text-yellow-300 transition duration-200 ease-in-out">Education</a></li>
-            <li><a href="#" class="hover:text-yellow-300 transition duration-200 ease-in-out">Goals </a></li>
-            <li><a href="#" class="hover:text-yellow-300 transition duration-200 ease-in-out">Contact</a></li>
-
-        </ul>
+  <!-- Header -->
+  <header class="bg-purple-600 text-white p-4 shadow-md">
+    <nav class="container mx-auto flex justify-between items-center flex-wrap px-4">
+      <h1 class="text-xl font-bold">Erich Nicole's Information</h1>
+      <ul class="flex flex-wrap gap-4 text-lg mt-2 md:mt-0">
+        <li><a href="#" class="hover:text-yellow-300 transition duration-200">Hobbies</a></li>
+        <li><a href="#" class="hover:text-yellow-300 transition duration-200">Education</a></li>
+        <li><a href="#" class="hover:text-yellow-300 transition duration-200">Goals</a></li>
+        <li><a href="#" class="hover:text-yellow-300 transition duration-200">Contact</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-<!-- Sidebar -->
-<div class="container mx-auto my-12 flex flex-col md:flex-row gap-8 px-4">
+  <!-- Main Content Layout -->
+  <div class="container mx-auto my-12 px-4 flex flex-col md:flex-row gap-8">
+
+    <!-- Sidebar -->
     <aside class="w-full md:w-1/4 bg-white p-6 rounded-lg shadow-md">
-        <h2 class="text-lg font-bold mb-4 text-purple-600">About Me</h2>
-        <p>Hello! I'm Erich Nicole Nivera, an aspiring Data Scientist and a passionate learner. </p>
+      <h2 class="text-lg font-bold mb-4 text-purple-600">About Me</h2>
+      <p>Hello! I'm Erich Nicole Nivera, an aspiring Data Scientist and a passionate learner.</p>
     </aside>
-<!-- Main Content -->
 
-<main class="container mx-auto my-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-
-    <article class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+    <!-- Main Content -->
+    <main class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+      <article class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
         <h2 class="text-lg font-bold mb-2 text-purple-600">My Hobbies</h2>
-        <p>I enjoy singing, painting, and playing the piano. Whenever I have extra free time, I work on small coding experiments or reads book about self-development. Before sleeping, I always make sure to use my Duolingo to enchance my Spanish vocabulary.</p>
-    </article>
+        <p>I enjoy singing, painting, and playing the piano. I also work on small coding projects or read books about self-development. Before sleeping, I use Duolingo to improve my Spanish vocabulary.</p>
+      </article>
 
-    <article class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+      <article class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
         <h2 class="text-lg font-bold mb-2 text-purple-600">Education</h2>
-        <p>I am a third-year student currently studying Bachelor of Science in Information Systems (BSIS) at Lyceum De San Pablo. I also take and study various online courses to expand my knowledge in technology, and language learning.</p>
+        <p>I am a third-year BSIS student at Lyceum De San Pablo. I also study various online courses in tech and language learning to broaden my skills.</p>
+      </article>
 
-    </article>
-    <article class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-<h2 class="text-lg font-bold mb-2 text-purple-600">Goals</h2>
-<p class="text-base leading-relaxed">I aim to become a Data Scientist in the future. But as of now, I want to become proficient in web development and be fluent in Spanish. I also plan to build a portfolio of creative coding projects that reflect my interests and skills.</p>
-    </article>
-    <article class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-        <h2 class="text-lg font-bold mb-2 text-purple-600"> Contact</h2>
-        <p>You can contact me through my Facebook account: <strong>Erich Nicole Nivera</strong>.</p>
-    </article>
+      <article class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+        <h2 class="text-lg font-bold mb-2 text-purple-600">Goals</h2>
+        <p>I want to become a Data Scientist. Currently, I’m working on improving my web development skills and fluency in Spanish while building a creative project portfolio.</p>
+      </article>
 
-<!--New Card-->
-    <article class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+      <article class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+        <h2 class="text-lg font-bold mb-2 text-purple-600">Contact</h2>
+        <p>You can contact me through Facebook: <strong>Erich Nicole Nivera</strong>.</p>
+      </article>
+
+    <!-- New Card -->
+     
+      <article class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
         <h2 class="text-lg font-bold mb-2 text-purple-600">Achievements</h2>
-        <p> I have completed several online certifications in coding, Call center, and many more.</p>
-    </article>
+        <p>I’ve completed online certifications in coding, customer service, and other areas. I’m proud of my progress and eager to keep learning.</p>
+      </article>
+    </main>
+  </div>
 
-</main>
-
-<!-- Footer -->
-<footer class="bg-purple-800 text-white text-center py-6 mt-12">
+  <!-- Footer -->
+  <footer class="bg-purple-800 text-white text-center py-6 mt-12">
     <p>&copy; 2025 Erich Nicole's Information. All rights reserved.</p>
-</footer>
+  </footer>
+
 </body>
 </html>
